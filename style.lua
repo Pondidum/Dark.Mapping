@@ -10,29 +10,6 @@ local zoomOut = MinimapZoomOut
 
 local styleMap = function()
 
-  --MAP
-  map:SetPoint("TOPLEFT", header, "BOTTOMLEFT", 0, -5)
-  map:SetPoint("TOPRIGHT", header, "BOTTOMRIGHT", 0, -5)
-
-
-
-  style.addBackground(map)
-  style.addShadow(map)
-
-
-  --HEADER
-  header:SetWidth(Minimap:GetHeight())
-  header:ClearAllPoints()
-  header:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -10, -10)
-  header:SetHeight(15)
-
-  headerText:SetPoint("CENTER", header, "CENTER", 0, 0)
-
-
-  style.addBackground(header)
-  style.addShadow(header)
-
-
   --CLOCK
   local clock = TimeManagerClockButton
   local clockBorder, clockText, clockAlarmTexture = clock:GetRegions()

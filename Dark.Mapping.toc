@@ -9,7 +9,7 @@ init.lua
 
 model.lua
 
-style.lua
+styleMap.lua
 mouseScroll.lua
 makeSquare.lua
 

@@ -2,8 +2,10 @@ local addon, ns = ...
 
 local run = function()
 	
-	for k,v in pairs(ns.features) do
-		v()
+	local model = ns.model.new()
+
+	for name, feature in pairs(ns.features) do
+		feature(model)
 	end
 
 end

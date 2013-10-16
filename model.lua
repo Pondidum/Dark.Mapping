@@ -10,6 +10,8 @@ local model = {
 		this.map = Minimap
 		this.header = MinimapZoneTextButton
 		this.headerText = MinimapZoneText
+		this.border = MinimapBorderTop
+		this.background = MinimapBackdrop
 
 		this.buttons = {}
 		this.buttons.worldMap = MiniMapWorldMapButton

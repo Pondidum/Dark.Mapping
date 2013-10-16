@@ -10,6 +10,7 @@ init.lua
 model.lua
 
 features\styleMap.lua
+features\styleClock.lua
 features\mouseScroll.lua
 features\makeSquare.lua
 

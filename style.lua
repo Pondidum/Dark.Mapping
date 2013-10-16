@@ -8,24 +8,6 @@ local zoomIn = MinimapZoomIn
 local zoomOut = MinimapZoomOut
 
 
-local styleMap = function()
-
-  --CLOCK
-  local clock = TimeManagerClockButton
-  local clockBorder, clockText, clockAlarmTexture = clock:GetRegions()
-
-  clock:SetPoint("TOPLEFT", map, "BOTTOMLEFT", 0, -5)
-  clock:SetHeight(15)
-
-  style.addShadow(clock)
-  style.addBackground(clock)
-
-  clockBorder:Hide()
-  clockAlarmTexture:SetAllPoints(clock)
-  clockText:SetAllPoints(clock)
-
-end
-
 local hideBlizzard = function()
 
   MinimapBorderTop:Hide()
@@ -34,8 +16,4 @@ local hideBlizzard = function()
 
 end
 
-
 hideBlizzard()
-makeSquare()
-styleMap()
-enableMouseScroll()

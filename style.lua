@@ -57,15 +57,6 @@ local hideBlizzard = function()
 
 end
 
-local makeSquare = function()
-
-  map:SetMaskTexture(core.textures.normal)
-
-  function GetMinimapShape() 
-    return "SQUARE" 
-  end
-
-end
 
 hideBlizzard()
 makeSquare()

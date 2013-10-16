@@ -1,0 +1,13 @@
+## Interface: 50001
+## Title: Dark.Mapping
+## Author: Darkend / DarkStorm / Zenedar / EU
+## Version: 0.0.1
+## Notes: Map features and styling
+## RequiredDeps: Dark.Core
+
+init.lua
+
+style.lua
+mouseScroll.lua
+
+run.lua

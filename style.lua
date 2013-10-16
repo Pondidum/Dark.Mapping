@@ -3,7 +3,7 @@ local style = core.style
 
 local map = Minimap
 local header = MinimapZoneTextButton
-local textHeader = MinimapZoneText
+local headerText = MinimapZoneText
 local zoomIn = MinimapZoomIn
 local zoomOut = MinimapZoomOut
 
@@ -26,7 +26,7 @@ local styleMap = function()
   header:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -10, -10)
   header:SetHeight(15)
 
-  textHeader:SetPoint("CENTER", header, "CENTER", 0, 0)
+  headerText:SetPoint("CENTER", header, "CENTER", 0, 0)
 
 
   style.addBackground(header)

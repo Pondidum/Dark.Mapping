@@ -9,8 +9,8 @@ init.lua
 
 model.lua
 
-styleMap.lua
-mouseScroll.lua
-makeSquare.lua
+features\styleMap.lua
+features\mouseScroll.lua
+features\makeSquare.lua
 
 run.lua

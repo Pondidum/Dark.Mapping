@@ -1,18 +1,20 @@
 local addon, ns = ...
 
-local map = Minimap
+ns.features.mouseScroll = function(model)
 
-local enableMouseScroll = function()
+	local map = model.map
+	local zoomIn = model.buttons.zoomIn
+	local zoomOut = model.buttons.zoomOut
 
-  map:EnableMouseWheel(true)
-  map:SetScript("OnMouseWheel", function(self, d)
-      if d > 0 then
-        zoomIn:Click()
-      elseif d < 0 then
-        zoomOut:Click()
-      end
-  end)
+	map:EnableMouseWheel(true)
+	map:SetScript("OnMouseWheel", function(self, delta)
+	
+		if delta > 0 then
+			zoomIn:Click()
+		elseif delta < 0 then
+			zoomOut:Click()
+		end
+
+	end)
 
 end
-
-table.insert(ns.features, enableMouseScroll)

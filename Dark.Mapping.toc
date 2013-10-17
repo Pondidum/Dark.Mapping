@@ -3,7 +3,7 @@
 ## Author: Darkend / DarkStorm / Zenedar / EU
 ## Version: 0.0.1
 ## Notes: Map features and styling
-## RequiredDeps: Dark.Core
+## RequiredDeps: Dark.Core, Blizzard_TimeManager
 
 init.lua
 

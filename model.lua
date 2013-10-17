@@ -17,6 +17,8 @@ local model = {
 		this.buttons.worldMap = MiniMapWorldMapButton
 		this.buttons.zoomIn = MinimapZoomIn
 		this.buttons.zoomOut = MinimapZoomOut
+		this.buttons.tracking = MiniMapTracking
+		this.buttons.recording = MiniMapRecordingButton
 
 		local clock = TimeManagerClockButton
 		local clockBorder, clockText, clockAlarmTexture = clock:GetRegions()
@@ -27,6 +29,12 @@ local model = {
 			text = clockText,
 			alarm = clockAlarmTexture,
 		}
+
+		this.icons = {}
+		this.icons.instanceDifficulty = MiniMapInstanceDifficulty
+		this.icons.guildDifficulty = GuildInstanceDifficulty
+		this.icons.challengeMode = MiniMapChallengeMode
+		this.icons.mail = MiniMapMailFrame
 
 		return this
 

@@ -3,11 +3,16 @@
 ## Author: Darkend / DarkStorm / Zenedar / EU
 ## Version: 0.0.1
 ## Notes: Map features and styling
-## RequiredDeps: Dark.Core
+## RequiredDeps: Dark.Core, Blizzard_TimeManager
 
 init.lua
 
-style.lua
-mouseScroll.lua
+model.lua
+
+features\styleMap.lua
+features\styleClock.lua
+features\hideBlizzard.lua
+features\mouseScroll.lua
+features\makeSquare.lua
 
 run.lua

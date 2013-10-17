@@ -1,0 +1,25 @@
+local addon, ns = ...
+
+local core = Dark.core
+local style = core.style
+
+ns.features.styleClock = function(model)
+
+	local map = model.map
+
+	local clock = model.clock.button
+	local border = model.clock.border
+	local text = model.clock.text
+	local alarm = model.clock.alarm
+
+	clock:SetPoint("TOPLEFT", map, "BOTTOMLEFT", 0, -5)
+	clock:SetHeight(15)
+
+	style.addShadow(clock)
+	style.addBackground(clock)
+
+	border:Hide()
+	alarm:SetAllPoints(clock)
+	text:SetAllPoints(clock)
+
+end

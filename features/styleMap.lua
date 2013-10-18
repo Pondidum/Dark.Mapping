@@ -10,8 +10,8 @@ ns.features.styleMap = function(model)
 	local headerText = model.headerText
 
 	--MAP
-	map:SetPoint("TOPLEFT", header, "BOTTOMLEFT", 0, -5)
-	map:SetPoint("TOPRIGHT", header, "BOTTOMRIGHT", 0, -5)
+	map:SetPoint("TOPLEFT", header, "BOTTOMLEFT", 0, -ns.config.spacing)
+	map:SetPoint("TOPRIGHT", header, "BOTTOMRIGHT", 0, -ns.config.spacing)
 
 	style.addBackground(map)
 	style.addShadow(map)

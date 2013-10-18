@@ -12,7 +12,8 @@ ns.features.styleClock = function(model)
 	local text = model.clock.text
 	local alarm = model.clock.alarm
 
-	clock:SetPoint("TOPLEFT", map, "BOTTOMLEFT", 0, -5)
+	clock:SetPoint("TOPLEFT", map, "BOTTOMLEFT", 0, -ns.config.spacing)
+	clock:SetPoint("RIGHT", map, "CENTER", -ns.config.spacing, 0)
 	clock:SetHeight(15)
 
 	style.addShadow(clock)

@@ -20,7 +20,7 @@ ns.features.styleMap = function(model)
 	--HEADER
 	header:SetWidth(Minimap:GetHeight())
 	header:ClearAllPoints()
-	header:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -10, -10)
+	header:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -ns.config.screenOffset, -ns.config.screenOffset)
 	header:SetHeight(15)
 
 	headerText:SetPoint("CENTER", header, "CENTER", 0, 0)

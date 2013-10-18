@@ -6,6 +6,7 @@
 ## RequiredDeps: Dark.Core, Blizzard_TimeManager
 
 init.lua
+config.lua
 
 model.lua
 

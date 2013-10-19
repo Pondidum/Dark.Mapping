@@ -1,5 +1,8 @@
 local addon, ns = ...
 
+local core = Dark.core
+local style = core.style
+
 ns.features.styleMail = function(model)
 
 	local mail = model.icons.mail

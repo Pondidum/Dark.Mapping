@@ -6,15 +6,20 @@ local style = core.style
 ns.features.styleMail = function(model)
 
 	local map = model.map
-	local mail = model.mail.button
-	local mailBorder = model.mail.border
 
-	mail:SetPoint("TOPRIGHT", map, "BOTTOMRIGHT", 0, -ns.config.spacing)
-	mail:SetSize(15, 15)
+	local container = CreateFrame("Frame", nil, model.map)
+	container:SetPoint("TOPRIGHT", map, "BOTTOMRIGHT", 0, -ns.config.spacing)
+	container:SetSize(15, 15)
 
-	style.addShadow(mail)
-	style.addBackground(mail)
+	style.addShadow(container)
+	style.applyBackgroundTo(container)
 
-	mailBorder:Hide()
+	local button = model.mail.button
+	local border = model.mail.border
+	local icon = model.mail.icon
+
+	button:SetAllPoints(container)
+	icon:SetAllPoints(container)
+	border:Hide()
 
 end

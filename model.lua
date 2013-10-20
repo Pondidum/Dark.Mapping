@@ -30,11 +30,16 @@ local model = {
 			alarm = clockAlarmTexture,
 		}
 
+		this.mail = {
+			button = MiniMapMailFrame,
+			icon = MiniMapMailIcon,
+			border = MiniMapMailBorder,
+		}
+
 		this.icons = {}
 		this.icons.instanceDifficulty = MiniMapInstanceDifficulty
 		this.icons.guildDifficulty = GuildInstanceDifficulty
 		this.icons.challengeMode = MiniMapChallengeMode
-		this.icons.mail = MiniMapMailFrame
 
 		return this
 

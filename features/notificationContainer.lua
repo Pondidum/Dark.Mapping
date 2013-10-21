@@ -3,7 +3,7 @@ local addon, ns = ...
 local core = Dark.core
 local layout = core.layout
 
-ns.features.buttonContainer = function(model)
+ns.features.add(function(model)
 	
 	local container = CreateFrame("Frame", nil, model.map)
 	
@@ -17,6 +17,9 @@ ns.features.buttonContainer = function(model)
 		marginBottom = 0,
 		marginLeft = 0,
 
+		paddingTop = 0,
+		paddingLeft = 0,
+
 		defaultChildHeight = 15,
 		defaultChildWidth = 15,
 		forceChildSize = true,
@@ -24,4 +27,4 @@ ns.features.buttonContainer = function(model)
 
 	model.notificationContainer = container
 
-end
+end)

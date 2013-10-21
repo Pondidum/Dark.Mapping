@@ -1,6 +1,6 @@
 local addon, ns = ...
 
-ns.features.mouseScroll = function(model)
+ns.features.add(function(model)
 
 	local map = model.map
 	local zoomIn = model.buttons.zoomIn
@@ -17,4 +17,4 @@ ns.features.mouseScroll = function(model)
 
 	end)
 
-end
+end)

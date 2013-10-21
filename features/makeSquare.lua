@@ -2,7 +2,7 @@ local addon, ns = ...
 
 local core = Dark.core
 
-ns.features.makeSquare = function(model)
+ns.features.add(function(model)
 
   model.map:SetMaskTexture(core.textures.normal)
 
@@ -10,4 +10,4 @@ ns.features.makeSquare = function(model)
     return "SQUARE" 
   end
 
-end
+end)

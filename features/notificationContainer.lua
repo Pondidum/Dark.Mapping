@@ -1,0 +1,27 @@
+local addon, ns = ...
+
+local core = Dark.core
+local layout = core.layout
+
+ns.features.buttonContainer = function(model)
+	
+	local container = CreateFrame("Frame", nil, model.map)
+	
+	container:SetPoint("LEFT", model.map, "CENTER", 0, 0)
+	container:SetPoint("TOPRIGHT", model.map, "BOTTOMRIGHT", 0, -ns.config.spacing)
+	container:SetHeight(15)
+
+	layout.init(container, {
+		marginTop = 0,
+		marginRight = 0,
+		marginBottom = 0,
+		marginLeft = 0,
+
+		defaultChildHeight = 15,
+		defaultChildWidth = 15,
+		forceChildSize = true,
+	})
+
+	model.notificationContainer = container
+
+end

@@ -3,7 +3,7 @@ local addon, ns = ...
 local core = Dark.core
 local style = core.style
 
-ns.features.styleClock = function(model)
+ns.features.add(function(model)
 
 	local map = model.map
 
@@ -23,4 +23,4 @@ ns.features.styleClock = function(model)
 	alarm:SetAllPoints(clock)
 	text:SetAllPoints(clock)
 
-end
+end)

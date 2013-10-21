@@ -4,7 +4,7 @@ local core = Dark.core
 local style = core.style
 local events = core.events.new()
 
-ns.features.styleMail = function(model)
+ns.features.add(function(model)
 
 	local map = model.map
 
@@ -39,4 +39,4 @@ ns.features.styleMail = function(model)
 
 	end)
 
-end
+end)

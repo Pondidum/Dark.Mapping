@@ -3,7 +3,7 @@ local addon, ns = ...
 local core = Dark.core
 local style = core.style
 
-ns.features.styleMap = function(model)
+ns.features.add(function(model)
 	
 	local map = model.map
 	local header = model.header
@@ -28,4 +28,4 @@ ns.features.styleMap = function(model)
 	style.addBackground(header)
 	style.addShadow(header)
 
-end
+end)

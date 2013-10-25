@@ -11,6 +11,7 @@ config.lua
 model.lua
 
 features\notificationContainer.lua
+features\buttonContainer.lua
 
 features\styleMap.lua
 features\styleClock.lua

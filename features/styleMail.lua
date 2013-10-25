@@ -8,25 +8,23 @@ ns.features.add(function(model)
 
 	local map = model.map
 
-	local container = CreateFrame("Frame", nil, model.map)
-	container:SetPoint("TOPRIGHT", map, "BOTTOMRIGHT", 0, -ns.config.spacing)
-	container:SetSize(15, 15)
-
-	local texture = container:CreateTexture()
-	texture:SetAllPoints(container)
+	local mailContainer = CreateFrame("Frame", nil, model.map)
+	
+	local texture = mailContainer:CreateTexture()
+	texture:SetAllPoints(mailContainer)
 	texture:SetTexture(ns.config.mailIcon)
 	
-	style.addShadow(container)
-	style.applyBackgroundTo(container)
+	style.addShadow(mailContainer)
+	style.applyBackgroundTo(mailContainer)
 
 	local button = model.mail.button
 	local border = model.mail.border
 	local icon = model.mail.icon
 
-	button:SetAllPoints(container)
+	button:SetAllPoints(mailContainer)
 	border:Hide()
 
-	icon:SetAllPoints(container)
+	icon:SetAllPoints(mailContainer)
 	icon:SetTexture(nil)
 
 	events.register("UPDATE_PENDING_MAIL", function()
@@ -38,5 +36,7 @@ ns.features.add(function(model)
 		end
 
 	end)
+
+	model.notificationContainer.add(mailContainer)
 
 end)

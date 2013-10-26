@@ -2,7 +2,7 @@ local addon, ns = ...
 
 local core = Dark.core
 local style = core.style
-local layout = core.layout
+local layout = core.layout 
 local events = core.events.new()
 
 local blizzardItems = { 
@@ -74,6 +74,12 @@ ns.features.add(function(model)
 	end
 
 	processButton(QueueStatusMinimapButton)
+
+	hooksecurefunc("CreateFrame", function(type, name, parent, templates)
+		if templates == "MiniMapButtonTemplate" then
+			findButtons()
+		end
+	end)
 
 	events.register("ADDON_LOADED", function()
 		findButtons()

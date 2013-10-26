@@ -13,7 +13,7 @@ ns.features.add(function(model)
 
 	layout.init(container, {
 		marginTop = 0,
-		marginRight = 0,
+		marginRight = ns.config.spacing,
 		marginBottom = 0,
 		marginLeft = 0,
 

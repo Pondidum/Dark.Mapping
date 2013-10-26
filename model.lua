@@ -36,6 +36,12 @@ local model = {
 			border = MiniMapMailBorder,
 		}
 
+		this.queue = {
+			button = QueueStatusMinimapButton,
+			icon = QueueStatusMinimapButtonIcon,
+			border = QueueStatusMinimapButtonBorder,
+		}
+		
 		this.icons = {}
 		this.icons.instanceDifficulty = MiniMapInstanceDifficulty
 		this.icons.guildDifficulty = GuildInstanceDifficulty

@@ -19,7 +19,6 @@ local model = {
 		this.buttons.zoomOut = MinimapZoomOut
 		this.buttons.tracking = MiniMapTracking
 		this.buttons.recording = MiniMapRecordingButton
-		this.buttons.queue = QueueStatusMinimapButton
 
 		local clock = TimeManagerClockButton
 		local clockBorder, clockText, clockAlarmTexture = clock:GetRegions()
@@ -37,6 +36,12 @@ local model = {
 			border = MiniMapMailBorder,
 		}
 
+		this.queue = {
+			button = QueueStatusMinimapButton,
+			icon = QueueStatusMinimapButtonIcon,
+			border = QueueStatusMinimapButtonBorder,
+		}
+		
 		this.icons = {}
 		this.icons.instanceDifficulty = MiniMapInstanceDifficulty
 		this.icons.guildDifficulty = GuildInstanceDifficulty

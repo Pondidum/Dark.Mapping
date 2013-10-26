@@ -3,6 +3,7 @@ local addon, ns = ...
 local core = Dark.core
 local style = core.style
 local layout = core.layout
+local events = core.events.new()
 
 local blizzardItems = { 
 	--buttons:
@@ -22,12 +23,6 @@ local blizzardItems = {
 	TimeManagerClockButton = true,
 }
 
-local addContents = function(map)
-	 
-
-	
-end 
-
 ns.features.add(function(model)
 
 	local container = CreateFrame("Frame", nil, UIParent)
@@ -44,6 +39,16 @@ ns.features.add(function(model)
 		autosize = true,
 	})
 
+	local processButton = function(button)
+
+		button:RegisterForDrag(nil)
+		button:ClearAllPoints()
+		button:SetParent(container)
+		
+		container.add(button)
+			
+	end	
+
 	local findButtons = function()
 		
 		local buttons = {}
@@ -59,25 +64,19 @@ ns.features.add(function(model)
 			
 		end 
 		
-		return buttons 
+		for i, frame in ipairs(buttons) do
+		 
+			processButton(frame)
+			
+		end 
+
 
 	end
 
-	local processButton = function(button)
-
-		button:ClearAllPoints()
-		button:SetParent(container)
-			
-	end	
-
-	for i, frame in ipairs(findButtons()) do
-	 
-		processButton(frame)
-		container.add(frame)
-		
-	end 
-
 	processButton(QueueStatusMinimapButton)
 
+	events.register("ADDON_LOADED", function()
+		findButtons()
+	end)
 
 end)

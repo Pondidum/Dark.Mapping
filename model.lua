@@ -19,6 +19,7 @@ local model = {
 		this.buttons.zoomOut = MinimapZoomOut
 		this.buttons.tracking = MiniMapTracking
 		this.buttons.recording = MiniMapRecordingButton
+		this.buttons.queue = QueueStatusMinimapButton
 
 		local clock = TimeManagerClockButton
 		local clockBorder, clockText, clockAlarmTexture = clock:GetRegions()

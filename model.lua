@@ -12,6 +12,7 @@ local model = {
 		this.headerText = MinimapZoneText
 		this.border = MinimapBorderTop
 		this.background = MinimapBackdrop
+		this.cluster = MinimapCluster
 
 		this.buttons = {}
 		this.buttons.worldMap = MiniMapWorldMapButton

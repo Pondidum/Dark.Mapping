@@ -29,4 +29,13 @@ ns.features.add(function(model)
 	style.addBackground(header)
 	style.addShadow(header)
 
+	--cluster
+	local cluster = model.cluster
+	local clock = model.clock.button
+
+	cluster:ClearAllPoints()
+	cluster:SetPoint("TOPLEFT", header, "TOPLEFT", 0, 0)
+	cluster:SetPoint("TOPRIGHT", header, "TOPRIGHT", 0, 0)
+	cluster:SetPoint("BOTTOM", clock, "BOTTOM", 0, 0)
+	
 end)

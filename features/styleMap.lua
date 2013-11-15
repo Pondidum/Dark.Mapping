@@ -10,6 +10,7 @@ ns.features.add(function(model)
 	local headerText = model.headerText
 
 	--MAP
+	map:ClearAllPoints()
 	map:SetPoint("TOPLEFT", header, "BOTTOMLEFT", 0, -ns.config.spacing)
 	map:SetPoint("TOPRIGHT", header, "BOTTOMRIGHT", 0, -ns.config.spacing)
 

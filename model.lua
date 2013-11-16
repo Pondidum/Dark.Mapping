@@ -18,7 +18,6 @@ local model = {
 		this.buttons.worldMap = MiniMapWorldMapButton
 		this.buttons.zoomIn = MinimapZoomIn
 		this.buttons.zoomOut = MinimapZoomOut
-		this.buttons.tracking = MiniMapTracking
 		this.buttons.recording = MiniMapRecordingButton
 
 		local clock = TimeManagerClockButton
@@ -41,6 +40,14 @@ local model = {
 			button = QueueStatusMinimapButton,
 			icon = QueueStatusMinimapButtonIcon,
 			border = QueueStatusMinimapButtonBorder,
+		}
+
+		this.tracking = {
+			button = MiniMapTracking,
+			background = MiniMapTrackingBackground,
+			border = MiniMapTrackingButtonBorder,
+			icon = MiniMapTrackingIcon,
+			overlay = MiniMapTrackingButton
 		}
 		
 		this.icons = {}

@@ -12,7 +12,8 @@ ns.features.add(function(model)
 
 	local button = model.tracking.button
 	local icon = model.tracking.icon
-	
+	local overlay = model.tracking.overlay
+
 	style.addShadow(button)
 	style.applyBackgroundTo(button)
 
@@ -22,7 +23,9 @@ ns.features.add(function(model)
 	icon:ClearAllPoints()
 	icon:SetAllPoints(button)
 
-	tracking.overlay:SetHighlightTexture(nil)
+	overlay:SetHighlightTexture(nil)
+	overlay:SetScript("OnMouseDown", nil)
+	overlay:SetScript("OnMouseUp", nil)
 
 	button:SetParent(container)
 	container.add(button)

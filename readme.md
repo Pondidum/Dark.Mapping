@@ -3,4 +3,4 @@ Minimap styling for Darkui
 -------------
 
 
-* Mail icon texture from http://www.greepit.com/open-source-icons-gcons/
+* Mail and Search textures from http://www.greepit.com/open-source-icons-gcons/

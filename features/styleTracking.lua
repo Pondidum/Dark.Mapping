@@ -22,6 +22,7 @@ ns.features.add(function(model)
 
 	icon:ClearAllPoints()
 	icon:SetAllPoints(button)
+	icon:SetTexture(ns.config.searchIcon)
 
 	overlay:SetHighlightTexture(nil)
 	overlay:SetScript("OnMouseDown", nil)

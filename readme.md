@@ -1,6 +1,3 @@
+This functionality has been rolled into [Dark.Tint][dark-tint]
 
-Minimap styling for Darkui
--------------
-
-
-* Mail and Search textures from http://www.greepit.com/open-source-icons-gcons/
+[dark-tint]: https://github.com/Pondidum/Dark.Tint
